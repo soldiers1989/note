@@ -1,0 +1,7 @@
+ctrl+alt+L  格式化代码
+
+ctrl+r  单文件替换
+
+array的几种遍历循环，map是为了返回值，forEach是为了处理但不返回值，filter是过滤值，如果要跳出循环还是用for。
+
+

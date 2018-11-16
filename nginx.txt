@@ -1,0 +1,45 @@
+yum -y install make zlib zlib-devel gcc-c++ libtool  openssl openssl-devel
+
+wget http://downloads.sourceforge.net/project/pcre/pcre/8.35/pcre-8.35.tar.gz
+
+tar zxvf pcre-8.35.tar.gz
+
+cd pcre-8.35
+
+./configure
+
+make && make install
+
+pcre-config --version
+
+wget http://nginx.org/download/nginx-1.6.2.tar.gz
+
+tar zxvf nginx-1.6.2.tar.gz
+
+cd nginx-1.6.2
+
+./configure --prefix=/usr/local/webserver/nginx --with-http_stub_status_module --with-http_ssl_module --with-pcre=/usr/local/src/pcre-8.35
+
+make
+
+make install
+
+/usr/local/webserver/nginx/sbin/nginx -v
+
+Nginx配置
+
+
+
+vscode开发工具的配置
+{
+    "terminal.integrated.shell.windows": "C:\\Windows\\System32\\cmd.exe",
+    "window.zoomLevel": 0,
+    "vetur.format.defaultFormatter.html": "js-beautify-html",
+    "gitlens.advanced.messages": {
+        "suppressShowKeyBindingsNotice": true
+    },
+    "gitlens.historyExplorer.enabled": true,
+    "emmet.triggerExpansionOnTab": true,
+    "javascript.implicitProjectConfig.experimentalDecorators": true,
+    "javascript.updateImportsOnFileMove.enabled": "always"
+}

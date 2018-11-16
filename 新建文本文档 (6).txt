@@ -1,0 +1,49 @@
+1.首页页面美化
+2.商户后台“商户财务”，“高级查询”，“平台报表”，“分红”，“邀请注册”的接口对接
+3.总后台“平台资产”，“商户管理”的接口对接
+4.钱包系统，“报表”的对接。
+5.商户后台的国际化
+6.行情管理系统
+7.运维系统
+8.撮合系统
+9.日志系统
+10.风控(报表)决策(刷单机器人)
+
+总后台：
+manager.bzu.com    
+api.manager.bzu.com
+
+
+
+商户总后台：
+partner.bzu.com
+  api.partner.bzu.com
+
+
+const apiUrl = 'http://manager.rest.test.com/'  总后台
+
+const apiUrl = 'http://partner.manager.rest.test.com/'  商户后台
+
+xshell的使用
+
+进入后输入p查看服务，输入10查看id，输入0连接进入,输入cd /www 进入项目目录
+
+rz -y   上传并覆盖
+
+sz 下载 
+
+xshell支持拖入上传
+
+配合修改项目后台的配置文件
+编写HBT下载页（支持国际化下载）
+
+钱包系统前端项目搭建 加入canvas动画
+
+1.debug新增提币，增加跳转至绑定谷歌。
+2.debug交易对维护，增加下单价格和下单数量的限制。
+3.debug国际化，增加国际化code查询，拆分app服务为Android和ios。
+4.debug手工充值，设置用户输入的uid必须为五位以上，否则不执行查询操作。
+5.debug高级认证图片的加载问题，otc新增币种验证滚动。
+
+
+
